@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage('Hello'){
             steps{
-                withCredentials([aws(accessKeyVariable:'AWS_ACCESS_KEY_ID',credentialsId:'bcdbcdbcd',secretKeyVariable:'AWS_SECRET_ACCESS_KEY')]){
+                withCredentials([aws(accessKeyVariable:'AWS_ACCESS_KEY_ID',credentialsId:'bcdlskbcd',secretKeyVariable:'AWS_SECRET_ACCESS_KEY')]){
                 sh '''
                 aws --version
                 aws ec2 describe-instances
